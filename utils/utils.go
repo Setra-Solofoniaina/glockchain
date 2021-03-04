@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/binary"
 	"log"
+	"os"
 
 	"github.com/mr-tron/base58"
 )
@@ -40,4 +41,15 @@ func Base58Decode(input []byte) []byte {
 
 	return decoded
 
+}
+
+// CreateDBFolder create Database folder if not exist
+func CreateDBFolder() {
+	_, err := os.Stat("DB")
+	if os.IsNotExist(err) {
+		errDir := os.MkdirAll("DB", 0755)
+		if errDir != nil {
+			log.Fatal(err)
+		}
+	}
 }
