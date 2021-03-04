@@ -11,7 +11,7 @@ import (
 // HandleErr : Handle error function
 func HandleErr(err error) {
 	if err != nil {
-		log.Panic("EROOORRR: ", err.Error())
+		log.Panic("[ERROR] : ", err.Error())
 	}
 }
 

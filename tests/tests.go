@@ -30,9 +30,9 @@ func CreateWallet() {
 // Transaction : test transactions functions
 func Transaction() {
 	chain.InitChain()
-	cbtx := chain.CoinBaseTx(100, "1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "")
+	cbtx := chain.CoinBaseTx(100, "1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", "")
 	chain.AddBlock([]*chain.Transaction{cbtx})
-	tx := chain.NewTransaction("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "1C2xh3EhizWUXMagg83UpAcU4fk7UnUdYc", 50)
+	tx := chain.NewTransaction("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", "1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 50)
 	chain.AddBlock([]*chain.Transaction{tx})
 }
 
@@ -70,26 +70,26 @@ func Send(from, to string, amount int) {
 // MemPoolTest Function to test mem Pool
 func MemPoolTest() {
 	chain.InitChain()
-	Donate("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", 150)
-	Donate("1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 1)
-	chain.Send("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 50)
+	Donate("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", 150)
+	Donate("1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 1)
+	chain.Send("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", "1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 50)
 	chain.MinePendingTx()
-	chain.Send("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 100)
+	chain.Send("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", "1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 100)
 	fmt.Println("last valid tx added to mempool")
-	chain.Send("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 100)
+	chain.Send("1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", "1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", 100)
 	fmt.Println("we must hit an exception")
 }
 
 // MerkleTreeTest Function to test merkleTree function
 func MerkleTreeTest() {
 	chain.InitChain()
-	Donate("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", 150)
-	Donate("1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 1)
-	chain.Send("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 50)
+	Donate("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", 150)
+	Donate("1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 1)
+	chain.Send("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", "1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 50)
 	chain.MinePendingTx()
 	b1 := chain.GetBlockByHash(chain.GetLastBlockHash())
 	fmt.Printf("HMR : %x\n", b1.Header.HMerkleRoot)
-	chain.Send("1KHaWQQ3GHmWN2d417YbtA3L6v65b11Ya7", "1PrZapno38xz6g7ZHzwtxb3SM3uKUw8EE6", 100)
+	chain.Send("1EFjGMygRKDw7dkFs2PLBFunhWpeFshKLp", "1KgsVvVQzXgQ4LAaR3ZmFpDK9px4GD1ZXJ", 100)
 	chain.MinePendingTx()
 	b := chain.GetBlockByHash(chain.GetLastBlockHash())
 	fmt.Printf("HMR : %x\n", b.Header.HMerkleRoot)
