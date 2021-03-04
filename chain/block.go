@@ -7,8 +7,8 @@ import (
 	"log"
 	"time"
 
+	"github.com/Setra-Solofoniaina/glockchain/utils"
 	"github.com/boltdb/bolt"
-	"github.com/Setra-Solofoniaina/maki/utils"
 )
 
 const (

@@ -1,7 +1,7 @@
 package chain
 
 import (
-	"github.com/Setra-Solofoniaina/maki/utils"
+	"github.com/Setra-Solofoniaina/glockchain/utils"
 )
 
 // pool contain all unmined transactions

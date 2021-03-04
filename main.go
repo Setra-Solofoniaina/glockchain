@@ -6,9 +6,9 @@
 package main
 
 import (
-	"github.com/Setra-Solofoniaina/maki/tests"
+	"github.com/Setra-Solofoniaina/glockchain/tests"
 )
 
 func main() {
-	tests.MerkleTreeTest()
+	tests.Transaction()
 }

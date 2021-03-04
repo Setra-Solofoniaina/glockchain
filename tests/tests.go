@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Setra-Solofoniaina/maki/utils"
+	"github.com/Setra-Solofoniaina/glockchain/utils"
 
-	"github.com/Setra-Solofoniaina/maki/chain"
-	"github.com/Setra-Solofoniaina/maki/wallet"
+	"github.com/Setra-Solofoniaina/glockchain/chain"
+	"github.com/Setra-Solofoniaina/glockchain/wallet"
 )
 
 // CreateWallet test the creation of wallet

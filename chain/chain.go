@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/Setra-Solofoniaina/maki/utils"
-	"github.com/Setra-Solofoniaina/maki/wallet"
+	"github.com/Setra-Solofoniaina/glockchain/utils"
+	"github.com/Setra-Solofoniaina/glockchain/wallet"
 )
 
 // InitChain initialize the blockchain

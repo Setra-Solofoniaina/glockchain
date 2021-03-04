@@ -1,4 +1,4 @@
-module github.com/Setra-Solofoniaina/maki
+module github.com/Setra-Solofoniaina/glockchain
 
 go 1.16
 

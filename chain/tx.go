@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/Setra-Solofoniaina/maki/wallet"
+	"github.com/Setra-Solofoniaina/glockchain/wallet"
 
-	"github.com/Setra-Solofoniaina/maki/utils"
+	"github.com/Setra-Solofoniaina/glockchain/utils"
 )
 
 ////////////////////////////////////////////////////////////
