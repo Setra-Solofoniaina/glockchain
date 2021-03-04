@@ -1,7 +1,7 @@
 package chain
 
 import (
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 )
 
 // pool contain all unmined transactions

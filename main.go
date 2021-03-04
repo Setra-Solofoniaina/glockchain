@@ -1,13 +1,12 @@
 /*
 *
-* copyright - Bōryoku-tekina soro - 2020
-* makiko -  malagasy cryptocurrency
+* copyright - Setra Solofoniaina - 2021
  */
 
 package main
 
 import (
-	"github.com/boryoku-tekina/makiko/tests"
+	"github.com/Setra-Solofoniaina/maki/tests"
 )
 
 func main() {

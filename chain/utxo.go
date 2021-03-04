@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 )
 
 var (

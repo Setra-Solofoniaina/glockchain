@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 
-	"github.com/boryoku-tekina/makiko/chain"
-	"github.com/boryoku-tekina/makiko/wallet"
+	"github.com/Setra-Solofoniaina/maki/chain"
+	"github.com/Setra-Solofoniaina/maki/wallet"
 )
 
 // CreateWallet test the creation of wallet

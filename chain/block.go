@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 )
 
 const (

@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 )
 
 const walletFile = "./tmp/wallets.data"

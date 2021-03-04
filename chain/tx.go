@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/boryoku-tekina/makiko/wallet"
+	"github.com/Setra-Solofoniaina/maki/wallet"
 
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 )
 
 ////////////////////////////////////////////////////////////

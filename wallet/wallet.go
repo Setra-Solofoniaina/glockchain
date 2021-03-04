@@ -7,7 +7,7 @@ import (
 	"crypto/rand"
 	"crypto/sha256"
 
-	"github.com/boryoku-tekina/makiko/utils"
+	"github.com/Setra-Solofoniaina/maki/utils"
 	"golang.org/x/crypto/ripemd160"
 )
 

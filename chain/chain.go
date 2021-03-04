@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/boryoku-tekina/makiko/utils"
-	"github.com/boryoku-tekina/makiko/wallet"
+	"github.com/Setra-Solofoniaina/maki/utils"
+	"github.com/Setra-Solofoniaina/maki/wallet"
 )
 
 // InitChain initialize the blockchain
